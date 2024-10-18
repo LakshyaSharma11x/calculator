@@ -39,81 +39,83 @@ public class MainActivity extends AppCompatActivity {
 
         B_ANS = findViewById(R.id.B_ANS);
 
+        B0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                e.setText(e.getText().toString() + "0");
+            }
+        });
         B1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String pre=e.getText().toString();
-
-                e.setText("1"+pre);
+                e.setText(e.getText().toString() + "1");
             }
         });
         B2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String pre=e.getText().toString();
-
-                e.setText("2"+pre);
+                e.setText(e.getText().toString() + "2");
             }
         });
         B3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "3");
             }
         });
 
         B4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "4");
             }
         });
         B5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "5");
             }
         });
         B6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "6");
             }
         });
         B7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "7");
             }
         });
         B8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "8");
             }
         });
         B9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "9");
             }
         });
         B_ADD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "+");
             }
         });
         B_SUB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "-");
             }
         });
         B_MUL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                e.setText(e.getText().toString() + "*");
             }
         });
 
@@ -123,6 +125,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void button(View view,String symbol){
+        e.setText(symbol+e.getText().toString());
     }
 
 }
