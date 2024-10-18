@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         B8 = findViewById(R.id.B8);
         B9 = findViewById(R.id.B9);
         B0 = findViewById(R.id.B0);
-        B_ADD = findViewById(R.id.A_ADD);
+        B_ADD = findViewById(R.id.B_ADD);
         B_SUB = findViewById(R.id.B_SUB);
         B_MUL = findViewById(R.id.B_MUL);
 
